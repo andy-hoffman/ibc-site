@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
   async rewrites() {
     return [
@@ -5,6 +6,10 @@ module.exports = {
         source: '/admin',
         destination: '/admin/index.html',
       },
+      {
+        source: '/',
+        destination: '/home',
+      }
     ]
   },
 }
